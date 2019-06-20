@@ -1,0 +1,57 @@
+{
+  "name": "wappalyzer-to-md",
+  "version": "1.0.0",
+  "description": "Simple script to extract wappalyzer information in markdown format to the clipboard",
+  "main": "./src/cli.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "test": "jest --watchAll"
+  },
+  "bin": {
+    "wappalyzer-to-md": "./dist/cli.js"
+  },
+  "jest": {
+    "verbose": true,
+    "automock": false,
+    "clearMocks": true,
+    "modulePathIgnorePatterns": [
+      "node_modules",
+      "dist"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertovg/wappalyzer-to-md.git"
+  },
+  "keywords": [
+    "wappalyzer",
+    "clipboard",
+    "web-technologies",
+    "markdown"
+  ],
+  "author": "Roberto Vázquez González",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertovg/wappalyzer-to-md/issues"
+  },
+  "homepage": "https://github.com/robertovg/wappalyzer-to-md#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^5.16.0",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "clipboardy": "^2.1.0",
+    "lodash": "^4.17.11",
+    "wappalyzer": "^5.8.2"
+  }
+}
