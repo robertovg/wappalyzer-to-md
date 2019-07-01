@@ -1,4 +1,3 @@
-// FIXME find a better way to check types
 import groupBy from 'lodash/groupBy';
 import isEmpty from 'lodash/isEmpty';
 import { errorWappalyzerJSOStructure } from '../constants/errors';
